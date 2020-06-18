@@ -1,0 +1,13 @@
+/* #1797505637 */
+_oEa.pmdenyall = 0;
+_oEa.website("vp-uk");if (_oEa.isdef(typeof _oEa.uidset )) {_oEa.uidset("h8HWL4Ou1Ps2h0EUfCF1MMA9noSnC66s1d1Z0nGWs2cxXzCb6COcZA--");}var _EaCP = {"cgip" : _oEa.hcgi,"tp":{"":""}};
+_oEa.dcrun = function() {
+_oEa.xpathdc = {};
+if (_oEa.pmdenyall) { return; }
+};
+_oEa.mtrun = function() {
+_oEa.xpathmt = {};
+if (_oEa.pmdenyall) { return; }
+};
+_oEa.mtdcrun = function() {_oEa.mtrun();_oEa.dcrun();};_oEa.mtdcrun();_oEa.websiteend();
+ /* end !config */
