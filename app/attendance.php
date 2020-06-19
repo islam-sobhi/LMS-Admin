@@ -12,7 +12,9 @@ class attendance extends Model
 
     public function teacher()
     {
-         return $this->hasMany('App\Teacher');
+         return $this->belongsTo('App\Teacher');
     }
+
+
 
 }

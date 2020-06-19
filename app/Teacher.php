@@ -16,4 +16,9 @@ class Teacher extends Model
    return $this->belongsToMany('App\Semester');
 }
 
+  public function attendances()
+ {
+     return $this->hasMany('App\attendance');
+ }
+
 }

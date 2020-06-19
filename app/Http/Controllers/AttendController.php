@@ -87,6 +87,19 @@ class AttendController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+      public function getdata()
+    {
+        $date=date("y/m/d");  
+     $teachers = Teacher::select('teach_name', 'degree');
+     return Datatables::of($teachers)
+            ->addColumn('action', function($teachers){
+                return '<a href="#" class="btn btn-xs btn-primary edit" id="'.$teachers->id.'"><i class="glyphicon glyphicon-edit"></i> Edit</a><a href="#" class="btn btn-xs btn-danger delete" id="'.$teachers->id.'"><i class="glyphicon glyphicon-remove"></i> Delete</a>';
+            })
+            ->addColumn('checkbox', '<input type="checkbox" name="student_checkbox[]" class="student_checkbox" value="{{$id}}" />')
+            ->rawColumns(['checkbox','action'])
+            ->make(true);
+    }
+
     public function update(Request $request, $id)
     {
          dd($request->date);
