@@ -62,5 +62,23 @@
     </div>
 </div>
 
+<script type="text/javascript">
+$(document).ready(function() {
+     $('#student_table').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "ajax": "{{ route('ajaxdata.getdata') }}",
+        "columns":[
+            { "data": "first_name" },
+            { "data": "last_name" },
+            { "data": "action", orderable:false, searchable: false},
+            { "data":"checkbox", orderable:false, searchable:false}
+        ]
+     });
+
+
+});
+
+</script>
 </body>
 </html>
