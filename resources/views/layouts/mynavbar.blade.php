@@ -22,6 +22,8 @@
     <script src="{{ asset('/js/jquery-1.11.3.min.js') }}" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+
 </head>
 
 <body>
@@ -66,6 +68,21 @@
                                 </a>
                                 <a class="dropdown-item" href="/teacher/index">
                                     <i class='fas fa-eye'></i> &nbsp; Show Teachers
+
+                                </a>
+
+                        </li>
+
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                    Attendence
+                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/attendance/create"> <i class='fas fa-plus-circle '></i> &nbsp; Create
+                                </a>
+                                <a class="dropdown-item" href="/attendance/index">
+                                    <i class='fas fa-eye'></i> &nbsp; Show Attendence
 
                                 </a>
 

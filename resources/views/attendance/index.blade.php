@@ -4,16 +4,11 @@
   <div class="row">
     <div class="card mb-3" style="width: 100%;">
       <div class="card-header">
-        <i class="fa fa-table"></i> Create Attendence </div>
+        <i class="fa fa-table"></i> Display Attendence </div>
       <div class="card-body">
 
-      
-                      <form method="post" action="{{route('attendance.store')}}" enctype="multipart/form-data" role="form">
+         <form method="post" action="{{route('attendance.store')}}" enctype="multipart/form-data" role="form">
    {{csrf_field()}}
-   <div align="right">
-                <button type="submit" name="bulk_delete" id="bulk_delete" class="btn btn-success" >Save Data</button>
-
-    </div> <br />
       <div class="table-responsive">
           <table border="0" class="table table-striped table-bordered table-hover " id="example">
             <thead>
@@ -21,7 +16,7 @@
                 <th>No.</th>
                 <th>Teacher Name</th>
                 <th>Teacher Phone</th>
-                <th>Date</th>
+                <th>Create At</th>
                 <th>Absence</th>
             </tr>
             @if ($teacheres->count()>0 ) @foreach ($teacheres as $index=>$teach)
@@ -31,26 +26,21 @@
                   {{$teach->teach_name}}
                    <input type="hidden" name="name" class="" value="{{$teach->teach_name}}" />
                 </td>
-                <td>
-                    {{$teach->phone_number}}
+                <td> {{$teach->phone_number}}
                 <input type="hidden" name="phone" class="" value="{{$teach->phone_number}}" />
                 </td>
                 <td>
-
-                    {{$date=date("d/m/Y")}}
-                   
-                    <input type="hidden" name="today[]" class="" value="{{$date}}" />
+                  {{$teach->created_at}}
                 </td>
                 <td>
 
-                      <input type="checkbox" name="teachAttend[]" class="form-check-input" value="{{$teach->id}}"
-
  @foreach ($teach->attendances as $index=>$attend)
-    @if ($date=$attend->created_at->format("d/m/y"))
-                    checked disabled
-      @endif
+                @if($attend->created_at->format("d/m/y"))
+                {{$attend->created_at->format("d/m/y")}}
+                @else
+                 @endif
                 @endforeach
-                > 
+               
 
 
                 </td>
@@ -72,6 +62,5 @@
 </div>
 
 </div>
-
 
 @endsection

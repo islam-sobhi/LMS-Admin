@@ -49,7 +49,7 @@ Route::get('/home', 'HomeController@index')->name('home');
     attendance 
 */
 
-Route::post('ajaxdata/getdata', 'AttendController@getdata')->name('attendance.store');
+
   Route::post('/attendance/store', 'AttendController@store')->name('attendance.store');
   Route::get('/attendance/create', 'AttendController@create')->name('attendance.create');
   Route::get('/attendance/index', 'AttendController@index')->name('attendance.index');
