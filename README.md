@@ -1,9 +1,9 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/islam-sobhi/MyLaravelBlog/master/public/img/laravel-logolockup-cmyk-red.png" width="400"></p>
 
 ### **Demo**
-<img src="https://user-images.githubusercontent.com/22322246/85128839-21edb180-b243-11ea-8ed7-eba55720267b.PNG" width="400">   <img src="https://user-images.githubusercontent.com/22322246/85128829-1f8b5780-b243-11ea-87e2-91eb2bd257d0.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/22322246/85128839-21edb180-b243-11ea-8ed7-eba55720267b.PNG">   <img src="https://user-images.githubusercontent.com/22322246/85128829-1f8b5780-b243-11ea-87e2-91eb2bd257d0.PNG" width="400">
 
-<img src="https://user-images.githubusercontent.com/22322246/85128836-21551b00-b243-11ea-8dfb-066ee0a1757a.PNG" width="400">   <img src="https://user-images.githubusercontent.com/22322246/85128838-21551b00-b243-11ea-9be7-56a2eea20757.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/22322246/85128836-21551b00-b243-11ea-8dfb-066ee0a1757a.PNG">   <img src="https://user-images.githubusercontent.com/22322246/85128838-21551b00-b243-11ea-9be7-56a2eea20757.PNG" >
 
 
 <p align="center">
